@@ -24,7 +24,7 @@ User 2:  [ { username: 'you_rock',
 Web server listening at: http://0.0.0.0:3000
 Browse your REST API at http://0.0.0.0:3000/explorer
 ```
-Now you have your server up and running. No just redirect to `http://0.0.0.0:3000` and you would see a success message something like this `{"started":"2016-10-27T17:44:16.743Z","uptime":568.03}`
+Now you have your server up and running. Now just redirect to `http://0.0.0.0:3000` and you would see a success message something like this `{"started":"2016-10-27T17:44:16.743Z","uptime":568.03}`
 
 ### Client folder setup
 
@@ -42,7 +42,7 @@ the client folder and create angular app. For details how to setup the client fo
 
 Category and Sub-category both have a property named as `type` which defines what type of category it is. Sub-category has an extra property as `parent-type` which just stores its parent category type. Sub-category type depends on its parent category so in html form when you are trying to create a Sub-category the values should be filtered based on parent category type.
 
-Here are the list of types: 
+Here is the list of category and their Sub-category types: 
 ```
 1. Electronics 
 	* Tv
