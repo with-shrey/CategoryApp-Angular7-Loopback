@@ -2,6 +2,8 @@
 
 This project is a demo project setup for candidates who are applying for frontend developer role at [Shoppinpal](http://shoppinpal.com). Please clone this project and follow the steps mentioned in the test shared with you. 
 
+npm run start
+npm run ng
 
 ### How to run this?
 
