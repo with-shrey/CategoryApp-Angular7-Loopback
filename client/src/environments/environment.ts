@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://0.0.0.0:3000/api/'
+  apiBaseUrl: 'http://categories.shrey.work:3000/api/'
 };
 
 /*
