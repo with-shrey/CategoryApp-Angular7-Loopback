@@ -4,6 +4,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
+    "ng": "cd ./client && npm run start",
     "pretest": "eslint .",
     "posttest": "nsp check"
   },

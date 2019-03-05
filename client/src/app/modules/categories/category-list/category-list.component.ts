@@ -13,6 +13,7 @@ import {Breadcrum} from '../../../shared/model/breadcrum';
 export class CategoryListComponent implements OnInit {
   categories: Category[];
   offset = 0;
+  timeout: any;
   search: string;
   constructor(private service: CategoryService,
               private toastr: ToastrService,
@@ -54,6 +55,23 @@ export class CategoryListComponent implements OnInit {
         this.categories.push(...categories);
         this.offset += this.service.limit;
       });
+    }
+  }
+
+  onSearch(term: string): void {
+    if ( this.timeout ) { clearTimeout(this.timeout); }
+    if (term && term.length > 0) {
+      this.timeout = setTimeout(() => {
+        this.offset = 0;
+        this.service.searchCategory(term, 0).subscribe(categories => {
+          this.categories.length = 0;
+          this.categories.push(...categories);
+          this.offset += this.service.limit;
+        });
+      }, 200);
+    } else {
+      this.offset = 0;
+      this.onScroll();
     }
   }
 }
