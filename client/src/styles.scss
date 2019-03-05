@@ -15,3 +15,16 @@ body{
   padding-left: 15px;
 }
 
+.buttons{
+  border: none;
+  border-radius: 1.5rem;
+  padding: 20px 80px;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  }
+}
+

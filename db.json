@@ -1,0 +1,59 @@
+{
+  "ids": {
+    "User": 7,
+    "AccessToken": 11,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Category": 24,
+    "Sub-category": 2
+  },
+  "models": {
+    "User": {
+      "1": "{\"username\":\"goodjob\",\"password\":\"$2a$10$i8J9BsLm8v1Sw8WX5/TlaOFVIuuYI0Afn2zE9IVNK69KKZgfZrN5a\",\"email\":\"goodjob@shoppinpal.com\",\"id\":1}",
+      "2": "{\"username\":\"you_rock\",\"password\":\"$2a$10$2QNuzC9p0y4hjSdrGaVowO8M32JCZQG1h9jOO4YDcBNQPXHYwt95C\",\"email\":\"yourock@shoppinpal.com\",\"id\":2}",
+      "3": "{\"password\":\"$2a$10$lOji8DugaL/vknKR67pGcutlXd8n6EDSglp5L7Bl2UOdc9y7yDdkm\",\"email\":\"shrey@gmail.com\",\"id\":3}",
+      "4": "{\"username\":\"string\",\"password\":\"$2a$10$lKTWS2eJGblJ.7XtzDiVieU6PKdTgalhnx3acZpsdYvVR.KUGfJHK\",\"email\":\"string@shrey.com\",\"id\":4}",
+      "6": "{\"username\":\"shreyg\",\"password\":\"$2a$10$CuWFnFgzJyAHlOFn3JsrfuBirQzHZ5EbqMOQsx7qIqtPANnUzsMme\",\"email\":\"me@shrey.work\",\"id\":6}",
+      "-1": "{\"username\":\"shrey\",\"password\":\"$2a$10$g7RTohkDkFyqvj/6wZVdBOfvxrMhvYzp0UOq6tGkGqNuvrGxY0vOG\",\"email\":\"shrey@shrey.work\",\"id\":-1,\"confirm_password\":\"p\"}"
+    },
+    "AccessToken": {
+      "N8pl8qtIzeYGm6lm0aFoz5uKz83myL0Y1OB8PrIKw4PgvWEX7Y1BrcyntC8ZskWb": "{\"id\":\"N8pl8qtIzeYGm6lm0aFoz5uKz83myL0Y1OB8PrIKw4PgvWEX7Y1BrcyntC8ZskWb\",\"ttl\":1209600,\"created\":\"2019-02-28T19:38:14.383Z\",\"userId\":3}",
+      "BPqhkSxqb96AifQmrJsjIoBYclk0t4KKRmohZem1KbWjEfWa0shzoZQq0DQqCLAK": "{\"id\":\"BPqhkSxqb96AifQmrJsjIoBYclk0t4KKRmohZem1KbWjEfWa0shzoZQq0DQqCLAK\",\"ttl\":1209600,\"created\":\"2019-03-03T20:50:58.243Z\",\"userId\":6}",
+      "4wZdg6FeopWeU594D8r9rtkEnGhL3RoUElmei258yS67Lv0qCva19MBjXpZ5XQzS": "{\"id\":\"4wZdg6FeopWeU594D8r9rtkEnGhL3RoUElmei258yS67Lv0qCva19MBjXpZ5XQzS\",\"ttl\":1209600,\"created\":\"2019-03-03T21:01:56.922Z\",\"userId\":6}",
+      "DyAgwVhqQhGPdFtEGPPYuAQpggvsj3iuK1W7AU4sBXUqBFB6ifqHegknWTHdeav2": "{\"id\":\"DyAgwVhqQhGPdFtEGPPYuAQpggvsj3iuK1W7AU4sBXUqBFB6ifqHegknWTHdeav2\",\"ttl\":1209600,\"created\":\"2019-03-04T11:51:05.249Z\",\"userId\":6}",
+      "Qux8DHCWXckLDCP0oHsvjgRua4uTLD0QzowENPq5ewh1BhOUHn5L8yc8DopyXJ2S": "{\"id\":\"Qux8DHCWXckLDCP0oHsvjgRua4uTLD0QzowENPq5ewh1BhOUHn5L8yc8DopyXJ2S\",\"ttl\":1209600,\"created\":\"2019-03-04T15:48:49.340Z\",\"userId\":6}",
+      "xscGUdvwTIZYl5pRGNhKpJwgZHiavZmnbtEU8zKSMVvD8CWCIgWFVdE86asXmbme": "{\"id\":\"xscGUdvwTIZYl5pRGNhKpJwgZHiavZmnbtEU8zKSMVvD8CWCIgWFVdE86asXmbme\",\"ttl\":1209600,\"created\":\"2019-03-04T15:49:06.236Z\",\"userId\":6}",
+      "3zm6m11OmAuR9Vjr1QmkBVBytIiPkkrBrvWOKlZZM8pHR7Pdl5JTZMlZ5FImnMVb": "{\"id\":\"3zm6m11OmAuR9Vjr1QmkBVBytIiPkkrBrvWOKlZZM8pHR7Pdl5JTZMlZ5FImnMVb\",\"ttl\":1209600,\"created\":\"2019-03-04T17:44:54.132Z\",\"userId\":6}",
+      "ZpnvFq1Lt063o6beFVBc7MdkXb8jyIOyaAhsUQvJV6IE19rns0s2wnN3vhiFiX3L": "{\"id\":\"ZpnvFq1Lt063o6beFVBc7MdkXb8jyIOyaAhsUQvJV6IE19rns0s2wnN3vhiFiX3L\",\"ttl\":1209600,\"created\":\"2019-03-04T17:44:57.436Z\",\"userId\":6}",
+      "nezFPKnWAv6T0uhIMgqqyH8gORyGUAD5MJeTHpRSGaqZ23IczzEw9Kel5Bd8qrFC": "{\"id\":\"nezFPKnWAv6T0uhIMgqqyH8gORyGUAD5MJeTHpRSGaqZ23IczzEw9Kel5Bd8qrFC\",\"ttl\":1209600,\"created\":\"2019-03-04T17:45:03.109Z\",\"userId\":6}",
+      "LyVzi5A7X35YYKFds7dEMRNC7EqczqZmE0NSq5Eb6bmR6B0DzonDacfYDjplTfLf": "{\"id\":\"LyVzi5A7X35YYKFds7dEMRNC7EqczqZmE0NSq5Eb6bmR6B0DzonDacfYDjplTfLf\",\"ttl\":1209600,\"created\":\"2019-03-05T18:38:39.634Z\",\"userId\":6}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Category": {
+      "4": "{\"name\":\"Gupta\",\"description\":\"hastreka\",\"type\":\"global\",\"id\":4}",
+      "5": "{\"name\":\"s\",\"description\":\"a\",\"type\":\"global\",\"id\":5}",
+      "6": "{\"name\":\"Shrey\",\"description\":\"Gupta\",\"type\":\"global\",\"id\":6}",
+      "9": "{\"name\":\"parth\",\"description\":\"paliwak\",\"type\":\"global\",\"id\":9}",
+      "10": "{\"name\":\"da\",\"description\":\"fd\",\"type\":\"global\",\"id\":10}",
+      "11": "{\"name\":\"fe\",\"description\":\"hyt\",\"type\":\"global\",\"id\":11}",
+      "12": "{\"name\":\"jyt\",\"description\":\"fwe\",\"type\":\"global\",\"id\":12}",
+      "13": "{\"name\":\"regterg\",\"description\":\"w4wef\",\"type\":\"global\",\"id\":13}",
+      "14": "{\"name\":\"ferfr\",\"description\":\"olil\",\"type\":\"global\",\"id\":14}",
+      "15": "{\"name\":\"iyuiy\",\"description\":\"nbnb\",\"type\":\"global\",\"id\":15}",
+      "16": "{\"name\":\"utyi\",\"description\":\"nmmn\",\"type\":\"global\",\"id\":16}",
+      "17": "{\"name\":\"uyjj\",\"description\":\" mn mn\",\"type\":\"global\",\"id\":17}",
+      "18": "{\"name\":\"jhhu\",\"description\":\"nmnmn\",\"type\":\"global\",\"id\":18}",
+      "19": "{\"name\":\"jhmjhmh\",\"description\":\"mn mn n\",\"type\":\"global\",\"id\":19}",
+      "20": "{\"name\":\"ertet\",\"description\":\"cbv\",\"type\":\"global\",\"id\":20}",
+      "21": "{\"name\":\"eqwq\",\"description\":\"xczz\",\"type\":\"global\",\"id\":21}",
+      "22": "{\"name\":\"htyhb\",\"description\":\"dawsc\",\"type\":\"global\",\"id\":22}",
+      "23": "{\"name\":\"hello\",\"description\":\"\",\"type\":\"global\",\"id\":23}"
+    },
+    "Sub-category": {
+      "1": "{\"name\":\"default\",\"description\":\"\",\"parent-type\":\"\",\"type\":\"s\",\"categoryId\":1,\"id\":1}"
+    }
+  }
+}

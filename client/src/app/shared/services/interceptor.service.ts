@@ -26,10 +26,9 @@ export class InterceptorService implements HttpInterceptor {
       }),
       catchError(error => {
         if (error.error.error) {
-          console.log(error.error.error);
           this.toastr.error(error.error.error.message.split(';').join('\n'), error.error.error.name);
         } else {
-          this.toastr.error('', 'Error');
+          this.toastr.error(error.message, 'Error');
         }
         return throwError(error);
       })
