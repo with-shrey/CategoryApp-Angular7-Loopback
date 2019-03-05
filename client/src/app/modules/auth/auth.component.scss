@@ -1,0 +1,57 @@
+.register{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  padding: 0;
+  height: 100vh;
+  margin: 0;
+}
+.register-left{
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+}
+.register-left-link{
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.register-right{
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  height: 100vh;
+}
+.register-left-img{
+  width: 45px;
+}
+
+.register-form{
+  margin-top: 10%;
+  padding-top: 7vh;
+  padding-left: 7vw;
+}
+.btnRegister{
+  float: right;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 20px 80px;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.register-heading{
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #495057;
+}
+
+.helper-text{
+  color: #ff693d;
+}

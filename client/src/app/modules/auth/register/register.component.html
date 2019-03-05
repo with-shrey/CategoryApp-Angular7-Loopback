@@ -1,0 +1,48 @@
+<form [formGroup]="registerForm" class="register-form" (ngSubmit)="registerUser()">
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">account_circle</i>
+      <input id="icon_username" type="text" formControlName="username" class="validate" [(ngModel)]="user.username">
+      <label for="icon_username">Username</label>
+      <div *ngIf="username.invalid && (username.dirty || username.touched)">
+        <span *ngIf="username.errors.required" class="helper-text" >Username cannot be empty</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">alternate_email</i>
+      <input id="icon_email" formControlName="email" type="tel" class="validate" [(ngModel)]="user.email">
+      <label for="icon_email">E-mail</label>
+      <div *ngIf="email.invalid && (email.dirty || email.touched)">
+        <span *ngIf="email.errors.required" class="helper-text" >Email cannot be empty</span>
+        <span *ngIf="email.errors.email" class="helper-text" >Invalid Email Format</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">vpn_key</i>
+      <input id="icon_password" formControlName="password"  type="password" class="validate" [(ngModel)]="user.password">
+      <label for="icon_password">Password</label>
+      <div *ngIf="password.invalid && (password.dirty || password.touched)">
+        <span *ngIf="password.errors.MatchPassword" class="helper-text">Passwords do not match</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">vpn_key</i>
+      <input  id="icon_password_repeat" formControlName="confirm_password" type="password" class="validate" [(ngModel)]="user.confirm_password">
+      <label for="icon_password_repeat">Confirm Password</label>
+      <div *ngIf="confirm_password.invalid && (confirm_password.dirty)">
+        <span *ngIf="confirm_password.errors.MatchPassword" class="helper-text">Passwords do not match</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <input [ngStyle]="submitted ? {'background': '#c1c1c1',color: '#000000'}: {}" type="submit" class="btnRegister" value="Register"/>
+    </div>
+  </div>
+</form>

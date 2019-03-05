@@ -1,0 +1,16 @@
+<div>
+  <div class="row register">
+    <div class="col s3 register-left valign-wrapper">
+      <div class="row">
+        <img class="row col s6 offset-s3 register-left-img" src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+        <h5 class="row col s12">Welcome</h5>
+        <p class="row col s12">{{text}}</p>
+        <a class="row col s6 offset-s3 register-left-link" [routerLink]="link">{{button}}</a><br/>
+      </div>
+    </div>
+    <div class="col s9 register-right">
+      <h5 class="register-heading">{{title}}</h5>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

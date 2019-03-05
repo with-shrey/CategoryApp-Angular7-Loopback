@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <div class="card-content">
+        <span (click)="enableAdd()" *ngIf="!addMode" class="card-title"><i class="material-icons prefix">add</i> Add Category</span>
+        <i *ngIf="addMode" (click)="addMode = false"  class="material-icons prefix">close</i>
+        <div *ngIf="addMode" class="row">
+          <form class="col s12" (ngSubmit)="addCategory()">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="name" type="text" name="name" class="validate" [(ngModel)]="category.name" required>
+                <label for="name">Name</label>
+              </div>
+            </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" name="description" [(ngModel)]="category.description" required></textarea>
+              <label for="textarea1">Description</label>
+            </div>
+          </div>
+            <div class="row">
+              <input type="submit" value="Submit"/>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
