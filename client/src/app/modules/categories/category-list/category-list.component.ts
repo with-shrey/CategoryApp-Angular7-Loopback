@@ -4,6 +4,7 @@ import {CategoryService} from '../shared/service/category.service';
 import {ToastrService} from 'ngx-toastr';
 import {BreadcrumService} from '../../../shared/service/breadcrum.service';
 import {Breadcrum} from '../../../shared/model/breadcrum';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-category-list',
@@ -13,15 +14,21 @@ import {Breadcrum} from '../../../shared/model/breadcrum';
 export class CategoryListComponent implements OnInit {
   categories: Category[];
   offset = 0;
+  selectedCategory: number;
   timeout: any;
   search: string;
   constructor(private service: CategoryService,
               private toastr: ToastrService,
-              private crum: BreadcrumService) {
+              private crum: BreadcrumService,
+              private route: ActivatedRoute,
+  ) {
     this.crum.setBreadcrum([new Breadcrum('Categories', '/')]);
   }
 
   ngOnInit() {
+    if (this.route.snapshot.params['id']) {
+      this.selectedCategory = Number(this.route.snapshot.params['id']);
+    }
     this.service.getCategories().subscribe(categories => {
       this.categories = categories;
       this.offset += this.service.limit;
@@ -72,6 +79,14 @@ export class CategoryListComponent implements OnInit {
     } else {
       this.offset = 0;
       this.onScroll();
+    }
+  }
+
+  selectCategory(category: Category) {
+    if (this.selectedCategory !== category.id) {
+      this.selectedCategory = category.id;
+    } else {
+      this.selectedCategory = null;
     }
   }
 }

@@ -3,6 +3,7 @@ import {User} from '../shared/model/user';
 import {AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {AuthService} from '../shared/service/auth.service';
 import {ToastrService} from 'ngx-toastr';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -15,7 +16,8 @@ export class RegisterComponent implements OnInit {
   public submitted = false;
   constructor(private service: AuthService,
               private formBuilder: FormBuilder,
-              private toastr: ToastrService
+              private toastr: ToastrService,
+              private _router: Router
               ) {
     this.user = new User(-1, '', '', '', '');
     this.registerForm = this.formBuilder.group({
@@ -59,7 +61,8 @@ export class RegisterComponent implements OnInit {
           this.submitted = false;
           console.log(user);
         this.toastr.success(`${user.username} Successfully`, 'Registered');
-      },
+          this._router.navigate(['/auth/login']);
+        },
         err => {
           this.submitted = false;
 

@@ -1,0 +1,25 @@
+<div class="row">
+  <form class="col s6 offset-s3" (ngSubmit)="updateCategory()">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="catid" type="number" name="category_id" class="validate" [(ngModel)]="category.categoryId" required>
+        <label class="active" for="catid">Category ID</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="name" type="text" name="name" class="validate" [(ngModel)]="category.name" required>
+        <label class="active" for="name">Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea" name="description" [(ngModel)]="category.description" required></textarea>
+        <label class="active" for="textarea1">Description</label>
+      </div>
+    </div>
+    <div class="row">
+      <input class="buttons" type="submit" value="Submit"/>
+    </div>
+  </form>
+</div>

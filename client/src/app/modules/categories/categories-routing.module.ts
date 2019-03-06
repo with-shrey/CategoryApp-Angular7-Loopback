@@ -4,6 +4,8 @@ import {CategoriesComponent} from './categories.component';
 import {AuthGuard} from '../../shared/auth.guard';
 import {CategoryListComponent} from './category-list/category-list.component';
 import {CategoryEditComponent} from './category-edit/category-edit.component';
+import {SubCategoryComponent} from './sub-category/sub-category.component';
+import {SubCategoryEditComponent} from './sub-category-edit/sub-category-edit.component';
 
 const routes: Routes = [
   {
@@ -16,8 +18,16 @@ const routes: Routes = [
         component: CategoryListComponent,
       },
       {
+        path: ':id',
+        component: CategoryListComponent,
+      },
+      {
         path: ':id/edit',
         component: CategoryEditComponent,
+      },
+      {
+        path: ':id/:subid/edit',
+        component: SubCategoryEditComponent,
       }
     ]
   }

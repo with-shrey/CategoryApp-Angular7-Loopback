@@ -9,9 +9,12 @@ import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryEditComponent } from './category-edit/category-edit.component';
 import {BreadcrumComponent} from '../../shared/components/breadcrum/breadcrum.component';
 import {InfiniteScrollModule} from 'ngx-infinite-scroll';
+import { SubCategoryComponent } from './sub-category/sub-category.component';
+import { SubCategoryAddComponent } from './sub-category-add/sub-category-add.component';
+import { SubCategoryEditComponent } from './sub-category-edit/sub-category-edit.component';
 
 @NgModule({
-  declarations: [CategoriesComponent, CategoryListComponent, CategoryAddComponent, CategoryEditComponent,BreadcrumComponent],
+  declarations: [CategoriesComponent, CategoryListComponent, CategoryAddComponent, CategoryEditComponent,BreadcrumComponent, SubCategoryComponent, SubCategoryAddComponent, SubCategoryEditComponent],
   imports: [
     CommonModule,
     CategoriesRoutingModule,

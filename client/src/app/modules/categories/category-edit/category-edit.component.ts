@@ -25,7 +25,7 @@ export class CategoryEditComponent implements OnInit {
     this.id = this.route.snapshot.params['id'];
     this.crum.setBreadcrum([
       new Breadcrum('Categories', '/'),
-      new Breadcrum('' + this.id, '/'),
+      new Breadcrum('' + this.id, `/${this.id}/list`),
       new Breadcrum('Edit', '#'),
     ]);
     this.service.getCategory(this.id).subscribe(category => this.category = category);

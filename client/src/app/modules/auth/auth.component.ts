@@ -23,7 +23,7 @@ export class AuthComponent implements OnInit {
   }
 
   updateValues() {
-    if (this.router.url === '/auth/login') {
+    if (this.router.url !== '/auth/register') {
       this.text = 'Not Registered?';
       this.button = 'REGISTER';
       this.link = 'register';
