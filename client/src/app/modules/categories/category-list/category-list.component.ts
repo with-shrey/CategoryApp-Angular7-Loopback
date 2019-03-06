@@ -77,6 +77,7 @@ export class CategoryListComponent implements OnInit {
         });
       }, 200);
     } else {
+      this.categories.length = 0;
       this.offset = 0;
       this.onScroll();
     }
