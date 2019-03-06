@@ -25,9 +25,11 @@
       <div (click)="selectCategory(category)" class="card-content white-text">
         <span class="card-title">{{category.name}}</span>
         <p>{{category.description}}</p>
+        <p>Click Here to show/hide subcategories</p>
       </div>
       <div class="card-action">
         <a [routerLink]="'/'+category.id+'/edit'">EDIT</a>
+        <a (click)="deleteCategory(category)">DELETE</a>
         <a (click)="deleteCategory(category)">DELETE</a>
       </div>
       <div *ngIf="selectedCategory === category.id"  class="subcat">
